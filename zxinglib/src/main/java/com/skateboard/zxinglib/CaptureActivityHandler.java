@@ -71,7 +71,7 @@ public final class CaptureActivityHandler extends Handler
         this.activity = elements.getActivity();
         this.elements=elements;
         decodeThread = new DecodeThread(elements, decodeFormats, baseHints, characterSet,
-                new ViewfinderResultPointCallback(elements.getViewfinderView()));
+                new ViewfinderResultPointCallback(elements.findViewfinderView()));
         decodeThread.start();
         state = State.SUCCESS;
 

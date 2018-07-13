@@ -10,13 +10,13 @@ import com.skateboard.zxinglib.camera.CameraManager;
 public interface CaptureActivityElements
 {
 
-    ViewfinderView getViewfinderView();
+    ViewfinderView findViewfinderView();
 
     void handleDecode(Result rawResult, Bitmap barcode, float scaleFactor);
 
     Activity getActivity();
 
-    Handler getHandler();
+    Handler findHandler();
 
     CameraManager getCameraManager();
 

@@ -100,7 +100,7 @@ final class DecodeHandler extends Handler {
       }
     }
 
-    Handler handler = elements.getHandler();
+    Handler handler = elements.findHandler();
     if (rawResult != null) {
       // Don't log the barcode contents for security.
       long end = System.currentTimeMillis();
