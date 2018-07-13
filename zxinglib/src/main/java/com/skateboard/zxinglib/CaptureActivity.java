@@ -112,12 +112,12 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback,
     private LinearLayout infoLL;
     private ImageView flashIV;
 
-    public ViewfinderView getViewfinderView()
+    public ViewfinderView findViewfinderView()
     {
         return viewfinderView;
     }
 
-    public Handler getHandler()
+    public Handler findHandler()
     {
         return handler;
     }
